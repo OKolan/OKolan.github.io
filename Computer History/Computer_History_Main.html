@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  font-family:'Open Sans', sans-serif;
+  background:#151837;
+  width: 90%;
+  margin:0 auto;
+  padding:1em 0 6em;
+  color: #81b3d2;
+}
+.wrapper{
+  margin:3em 0;
+}
+a,a:visited,a:hover,a:active{
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+	position:relative;
+  transition:0.5s color ease;
+	text-decoration:none;
+	color:#81b3d2;
+	font-size:2.0em;
+  padding: 20px;
+}
+a:hover{
+	color:#d73444;
+}
+a.before:before,a.after:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+}
+a.before:before{
+  top:-0.25em;
+}
+a.after:after{
+  bottom:0.25em;
+}
+a.before:before,a.after:after{
+  height:5px;
+  height:0.35rem;
+  width:0;
+  background:#d73444;
+}
+
+a.third:after,a.sixth:before,a.sixth:after{
+  left:50%;
+  -webkit-transform:translateX(-50%);
+          transform:translateX(-50%);
+}
+a.before:hover:before,a.after:hover:after{
+  width:100%;
+}
+hr {
+  background-color: #81b3d2;
+  border-style: solid;
+}
+  
+  </style>
+
+
+<body>
+<center><h1>Computer History</h1></center>
+<hr>
+<center><div class="wrapper">
+<ul>
+<a class="third after" href="https://okolan.github.io/Computer%20History/1970.html">1970's</a>
+<a class="third after" href="#">1980's</a>
+<a class="third after" href="#">1990's</a>
+<a class="third after" href="#">2000's</a>
+<a class="third after" href="#">2010's</a>
+  </ul>
+</div>
+</center>
+<hr>
+</body>
+
+
+
+</html>
