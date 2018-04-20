@@ -32,12 +32,12 @@
       position: relative;
       transition: 0.5s color ease;
       text-decoration: none;
-      color: #F96D00;
+      color: red;
       font-size: 2.0em;
       padding: 20px;
     }
     a:hover {
-      color: #5C636E;
+      color: green;
     }
     a.before:before,
     a.after:after {
@@ -58,7 +58,7 @@
       height: 5px;
       height: 0.35rem;
       width: 0;
-      background: #5C636E;
+      background: green;
     }
     a.third:after,
     a.sixth:before,
@@ -88,29 +88,38 @@
         font-family: Oswald;
         color: green;
       }
+      a {
+        font-family: Oswald;
+      }
+      tr {
+        float: center;
+      }
+      img {
+        float: right;
+      }
   </style>
 
 
   <body>
-  <table>
-  <tr>
-    <td>
-      <a href="">Contact</a>
-      <a href="">Location</a>
-      <a href="">About Us</a>
-      <a href="">Home</a>
-    </td>
-  </tr>
-  </table>
+  <center>
+    <div class="wrapper">
+      <a class="third after">Home</a>
+      <a class="third after">Location</a>
+      <a class="third after">About Us</a>
+      <a class="third after">Contact</a>
+      </div>
+    </center>
   <hr>
     <center>
       <h1>1 in a Million Pizzaria</h1>
     </center>
     <hr>
     <br>
+    <img src="https://i.imgur.com/njDDRS3.jpg" width="50%" height="50%" float="right">
     <p>
     Our Pizza is top of the line quality and the best in town. Our toppings are always fresh and our pizza are very customizable! We have many mouth watering toping choices to chose from. 
     </p>
+    <hr>
     <div class="footer">
     <center>
     <p>
