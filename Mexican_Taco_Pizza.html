@@ -79,12 +79,14 @@
         background-color: #910000;
         color: #393E46;
         padding: 15px;
+        
       }
       h1 {
         font-family:Bungee Shade;
+        font-size: 40px;
       }
       p {
-        font-size: 25px;
+        font-size: 35px;
         font-family: Oswald;
         color: green;
       }
@@ -96,6 +98,20 @@
       }
       img {
         float: right;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      h2 {
+        font-family: Bungee Shade;
+        font-size: 40px;
+      }
+      ul {
+        font-family: Oswald;
+        font-size: 30px;
+        color: green;
       }
   </style>
 
@@ -115,17 +131,28 @@
     </center>
     <hr>
     <br>
-    <img src="https://i.imgur.com/njDDRS3.jpg" width="50%" height="50%" float="right">
+    <div class="clearfix">
+    <img src="https://i.imgur.com/njDDRS3.jpg" width="40%" height="40%" float="right">
     <p>
-    Our Pizza is top of the line quality and the best in town. Our toppings are always fresh and our pizza are very customizable! We have many mouth watering toping choices to chose from. 
+    Our Pizza is top of the line quality and the best in town. Our toppings are always fresh and our pizzas are very customizable! We have many mouth watering choices to chose from. We are sure you will enjoy our pizza.
     </p>
+    <br>
     <hr>
+    <h2>
+    Reviews from our Customers 
+    </h2>
+    <ul>
+    <li>"The Best Pizza ever!" - John</li>
+    <li>"Would 100% go back to eat again! Highly recommend." - Sam</li>
+    <li>Me and my family went here for dinner and w eloved it! - Rebecca</li>
+    </ul>
     <div class="footer">
     <center>
     <p>
     Enver Creek, Surrey BC
     </p>
     </center>
+    </div>
     </div>
     
     
