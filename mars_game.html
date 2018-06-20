@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+    background-image: url("https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2017/10/26225508/229536main_pia02406.jpg");
+    background-size: auto;
+}
+</style>
 <script>
   function startGame() {
   var start = prompt("Are you ready? (Yes or No)").toUpperCase();
@@ -8,12 +16,10 @@
     alert("Restart the game, once you are ready to play.");
   }
 }
-
 function newGame() {
   alert("You have crash landed on Mars. You were testing out new ships and were on a mission to go back to Earth on the new ships. You see light pollution all around you in the sky. However, you hear sounds behind you.");
   landings();
 }
-
 function landings() {
   var landing = prompt("Where would you like to go? (NORTH, WEST, EAST, SOUTH)").toUpperCase();
   switch (landing) {
@@ -41,7 +47,6 @@ function landings() {
       landings();
   }
 }
-
 function station() {
   var talk = prompt("What do you want? Where do you come from? (TALK or LEAVE)").toUpperCase();
   switch (talk) {
@@ -58,10 +63,8 @@ function station() {
     default:
       alert("Please type a command!");
       station();
-
   }
 }
-
 function soil() {
   var map = prompt("You see your station that you were trying to land at. They could possibly have a ship they could give you in order to get home. (STATION or GO BACK)").toUpperCase();
   switch (map) {
@@ -79,7 +82,6 @@ function soil() {
       soil();
   }
 }
-
 function bunkers() {
   var bunker = prompt("The door is sealed shut however there is a keyhole. (GO BACK or GO IN)").toUpperCase();
   if (bunker === "GO BACK") {
@@ -96,7 +98,6 @@ function bunkers() {
     bunkers();
   }
 }
-
 function villages() {
   var village = prompt("People from the village see you and start to approach you. What do you do? (TALK, ATTACK or SHOW BUNKER)").toUpperCase();
   switch (village) {
@@ -120,7 +121,6 @@ function villages() {
       villages();
   }
 }
-
 function mysteryObject() {
   var object = prompt("There seems to be no entrance into the object. What do you do? (GO BACK or LOOK AROUND)").toUpperCase();
   switch (object) {
@@ -137,7 +137,6 @@ function mysteryObject() {
       mysteryObject();
   }
 }
-
 function mysteryObject1() {
   var object2 = prompt("There is no light. However, you could try and find a match box or torch somewhere. What do you do? (GO TO SHIP, GO TO VILLAGE or LOOK AROUND)").toUpperCase();
   switch (object2) {
@@ -158,7 +157,6 @@ function mysteryObject1() {
       mysteryObject1();
   }
 }
-
 function torchShip() {
   var torchArea = prompt("You see the ship in smoke and rubble. What do you do? (SEARCH or LEAVE)").toUpperCase();
   switch (torchArea) {
@@ -176,7 +174,6 @@ function torchShip() {
       torchShip();
   }
 }
-
 function villageSearch() {
   var villageSearching = prompt("You see the villagers have torches on their houses. What do you do? (GRAB or LEAVE)");
   switch (villageSearching) {
@@ -194,7 +191,6 @@ function villageSearch() {
       villageSearch();
   }
 }
-
 function insideMysteryObject() {
   var insideMystery = prompt("It is pitch black but now you have a light source. Do you want to save it for later or use it now? (USE LIGHT or KEEP LIGHT)").toUpperCase();
   switch (insideMystery) {
@@ -212,8 +208,6 @@ function insideMysteryObject() {
       insideMysteryObject();
   }
 }
-
-
 function insideMysteryObject1() {
   var findKey = prompt("You find a door with ancient markings on it. The door seems to be made in similar material as the door to the bunker. However, the door has a cursive writing on it. (READ IT or LEAVE IT)").toUpperCase();
   switch (findKey) {
@@ -231,7 +225,6 @@ function insideMysteryObject1() {
       insideMysteryObject1();
   }
 }
-
 function insideMysteryObject2() {
   var answer = prompt("What is the answer to the riddle?").toUpperCase();
   if (answer === "THE SUN") {
@@ -245,7 +238,6 @@ function insideMysteryObject2() {
     insideMysteryObject2();
   }
 }
-
 function insideMysteryObject3() {
   var gotKey = prompt("You hold the key as it glistens in your hand. What do you do with the key? (GO TO VILLAGE, GO TO STATION or GO TO BUNKER)").toUpperCase();
   switch (gotKey) {
@@ -266,7 +258,6 @@ function insideMysteryObject3() {
       insideMysteryObject3();
   }
 }
-
 function villageTalk1() {
   var villagersTalk = prompt("The villagers come out and notice you holding something in your hand. Do you show it or keep it secret? (SHOW or KEEP)").toUpperCase();
   switch (villagersTalk) {
@@ -297,5 +288,24 @@ alert("You enter the ship and a door opens ontop of you in the roof.");
 alert("You fly up and go towards the horizon.");
 }
 }
+function stationTalk() {
+var askMen = prompt("The men ask if they can come with you back to Earth. What do you do? (LET THEM or LEAVE)").toUpperCase();
+switch (askMen) {
+case "LET THEM":
+alert("You take the men to the bunker.");
+bunkerSearch();
+break;
+case "LEAVE":
+alert("You leave without them and make your way to the bunker.");
+bunkerSearch();
+break;
+default:
+alert("Please type a command!");
+stationTalk();
+}
+}
 startGame();
 </script>
+<html>
+
+</html>
