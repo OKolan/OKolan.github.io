@@ -1,30 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  <title>
-  Mars Game
-  </title>
-  </head>
-<style>
-body {
-  background-color: orange;
-}
-hr {
-  border-style: solid;
-  color: black;
-}
-</style>
-<body>
-<center>
-<h1>
-Mars Game
-</h1>
-</center>
-<br>
-<hr>
-<br>
 <script>
-function startGame() {
+  function startGame() {
   var start = prompt("Are you ready? (Yes or No)").toUpperCase();
   if (start === 'YES') {
     alert("Lets get the game started then shall we");
@@ -320,28 +295,7 @@ alert("You walk into the bunker and the huge cavern looks very modern. There is 
 alert("You see a aircraft that looks brand new and has never been used.");
 alert("You enter the ship and a door opens ontop of you in the roof.");
 alert("You fly up and go towards the horizon.");
-alert("CONGRATULATIONS YOU HAVE BEAT THE GAME!")
-}
-case "STAY":
-alert("You stay on Mars and you will slowly die due to starvation.")
-}
-function stationTalk() {
-var askMen = prompt("The men ask if they can come with you back to Earth. What do you do? (LET THEM or LEAVE)").toUpperCase();
-switch (askMen) {
-case "LET THEM":
-alert("You take the men to the bunker.");
-bunkerSearch();
-break;
-case "LEAVE":
-alert("You leave without them and make your way to the bunker.");
-bunkerSearch();
-break;
-default:
-alert("Please type a command!");
-stationTalk();
 }
 }
 startGame();
 </script>
-</body>
-</html>
