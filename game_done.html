@@ -7,18 +7,6 @@ body {
     background-size: auto;
 }
 </style>
-    <body>
-<center>
-  <h1>
-  Mars Game
-  </h1>
-</center>
-<center>
-    <form>
-  <input type="button" name="btn" value="Play Game" onclick="startGame()">
-    </form>
-</center>
-</body>
 <script>
   function startGame() {
   var start = prompt("Are you ready? (Yes or No)").toUpperCase();
@@ -353,4 +341,14 @@ alert("CONGRATULATIONS YOU HAVE BEAT THE GAME!");
 startGame();
 </script>
 </head>
+<body>
+<center>
+  <h1>
+  Mars Game
+  </h1>
+</center>
+<center>
+  <button type="button" onclick=startGame()>Start Game</button>
+</center>
+</body>
 </html>
