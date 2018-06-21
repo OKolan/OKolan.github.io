@@ -170,7 +170,7 @@ function torchShip() {
   var torchArea = prompt("You see the ship in smoke and rubble. What do you do? (SEARCH or LEAVE)").toUpperCase();
   switch (torchArea) {
     case "SEARCH":
-      alert("You look under your seat in the compartment and find a match box. However, there is only one match left. If you mess this one up your all out of luck.");
+      alert("You look under your seat in the compartment and find a torch. However, there is only one torch left. If you mess this one up your all out of luck.");
       alert("You go back to the mysterious object");
       insideMysteryObject();
       break;
@@ -204,6 +204,7 @@ function insideMysteryObject() {
   var insideMystery = prompt("It is pitch black but now you have a light source. Do you want to save it for later or use it now? (USE LIGHT or KEEP LIGHT)").toUpperCase();
   switch (insideMystery) {
     case "USE LIGHT":
+    
       alert('You light the match and have a look around.');
       insideMysteryObject1();
       break;
